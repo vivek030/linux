@@ -29,3 +29,4 @@ RemainAfterExit=true
 WantedBy=default.target" > /etc/systemd/system/wg0-autostart.service
 systemctl daemon-reload
 systemctl enable wg0-autostart.service
+echo "> Done! Script executed succesfully"
