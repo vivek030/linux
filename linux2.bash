@@ -9,7 +9,7 @@ wg-quick down wg0
 systemctl disable wg-quick@wg0
 nmcli connection import type wireguard file /etc/wireguard/wg0.conf
 nmcli connection modify wg0 ipv4.dns-search ~.
-Nmcli connection modify wg0 ipv4.dns-priority -50
+nmcli connection modify wg0 ipv4.dns-priority -50
 nmcli connection up wg0
 #Service Networkmanager restart
 # create service unit file
